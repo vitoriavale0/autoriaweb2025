@@ -110,19 +110,72 @@ main .perfil button:hover {
   box-shadow: 0 0 25px rgba(29, 187, 51, 0.6);
 }
 
-/* FOTO */
-main .foto {
-  margin-top: 3rem;
-  text-align: center;
+/* PERFIL */
+main .perfil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  max-width: 1100px;
+  margin: 6rem auto;
+  padding: 0 2rem;
 }
 
+/* TEXTO À ESQUERDA */
+main .perfil .texto {
+  flex: 1;
+}
+
+main .perfil h1 {
+  font-size: 2.5rem;
+  font-family: Raleway, sans-serif;
+  color: #fff;
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+main .perfil h3 {
+  font-family: Raleway, sans-serif;
+  font-size: 1.3rem;
+  color: #ccc;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+main .perfil p {
+  color: #aaa;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+}
+
+main .perfil button {
+  background-color: #1dbb33;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 1.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(29, 187, 51, 0.4);
+  transition: all 0.3s ease;
+}
+
+main .perfil button:hover {
+  background-color: #18a42c;
+  box-shadow: 0 0 25px rgba(29, 187, 51, 0.6);
+}
+
+/* FOTO À DIREITA */
 main .foto img {
-  width: 260px;
-  height: 260px;
+  width: 340px;
+  height: 340px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
 }
+
 
 /* ÚLTIMOS TRABALHOS */
 main .last-jobs {
@@ -179,14 +232,16 @@ main .last-jobs ul li img {
     gap: 1rem;
   }
 
-  main .perfil {
-    text-align: center;
-  }
+main .perfil {
+  flex-direction: column;
+  text-align: center;
+}
 
-  main .foto img {
-    width: 200px;
-    height: 200px;
-  }
+main .foto img {
+  width: 220px;
+  height: 220px;
+}
+
 
   main .last-jobs ul {
     gap: 1rem;
